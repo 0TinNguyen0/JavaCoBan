@@ -9,17 +9,18 @@ public class StudentManagement {
     public int add(Student st){
         LS.add(st);
         return 1;
+        
     }
-    public int findStudentMSV(String MSV){
+    public int findStudentID(String StudentID){
         for (int i = 0; i < LS.size(); i++){
-            if(LS.get(i).getMaSinhVien().equals(MSV)){
+            if(LS.get(i).getStudentID().equals(StudentID)){
                 return i;
             }
         }
         return -1;
     } 
     public int update(Student st){
-        int pos = findStudentMSV(st.getMaSinhVien());
+        int pos = findStudentID(st.getStudentID());
         if (pos < 0){
             return -1;
         }else{
@@ -27,8 +28,8 @@ public class StudentManagement {
         }
         return pos;
     }        
-    public int del(String MSV){
-        int pos = findStudentMSV(MSV);
+    public int delete(String StudentID){
+        int pos = findStudentID(StudentID);
         if (pos < 0){
             return -1;
         }else{
@@ -40,7 +41,7 @@ public class StudentManagement {
         return LS;
     }
 
-    void setMSV(String text) {
+    void setStudentID(String text) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

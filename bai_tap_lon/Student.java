@@ -2,78 +2,79 @@
 package bai_tap_lon;
 
 public class Student {
-    private String MaSinhVien;
-    private String HoVaTen;
-    private String GioiTinh;
-    private String NgaySinh;
-    private String CMND;
-    private String SoDienThoai;
+    private String StudentID;
+    private String Name;
+    private String Gender;
+    private String Birthday;
+    private String IdentityCard;
+    private String Phone;
     private String Email;
-    private String QueQuan;
-    private String MonHoc;
-    private double Diem; 
+    private String Address;
+    private String Subject;
+    private double Marks; 
 
     public Student() {
     }
 
-    public Student(String MaSinhVien, String HoVaTen, String GioiTinh, String NgaySinh, String CMND, String SoDienThoai, String Email, String QueQuan, String MonHoc, double Diem) {
-        this.MaSinhVien = MaSinhVien;
-        this.HoVaTen = HoVaTen;
-        this.GioiTinh = GioiTinh;
-        this.NgaySinh = NgaySinh;
-        this.CMND = CMND;
-        this.SoDienThoai = SoDienThoai;
+    public Student(String StudentID, String Name, String Gender, String DateOfBirth, String IdentityCard, String Phone, String Email, String Address, String Subject, double Marks) {
+        this.StudentID = StudentID;
+        this.Name = Name;
+        this.Gender = Gender;
+        this.Birthday = DateOfBirth;
+        this.IdentityCard = IdentityCard;
+        this.Phone = Phone;
         this.Email = Email;
-        this.QueQuan = QueQuan;
-        this.Diem = Diem;
+        this.Address = Address;
+        this.Subject = Subject;
+        this.Marks = Marks;
     }
 
-    public String getMaSinhVien() {
-        return MaSinhVien;
+    public String getStudentID() {
+        return StudentID;
     }
 
-    public void setMaSinhVien(String MaSinhVien) {
-        this.MaSinhVien = MaSinhVien;
+    public void setStudentID(String StudentID) {
+        this.StudentID = StudentID;
     }
 
-    public String getHoVaTen() {
-        return HoVaTen;
+    public String getName() {
+        return Name;
     }
 
-    public void setHoVaTen(String HoVaTen) {
-        this.HoVaTen = HoVaTen;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
-    public String getGioiTinh() {
-        return GioiTinh;
+    public String getGender() {
+        return Gender;
     }
 
-    public void setGioiTinh(String GioiTinh) {
-        this.GioiTinh = GioiTinh;
+    public void setGender(String Gender) {
+        this.Gender = Gender;
     }
 
-    public String getNgaySinh() {
-        return NgaySinh;
+    public String getBirthday() {
+        return Birthday;
     }
 
-    public void setNgaySinh(String NgaySinh) {
-        this.NgaySinh = NgaySinh;
+    public void setBirthday(String Birthday) {
+        this.Birthday = Birthday;
     }
 
-    public String getCMND() {
-        return CMND;
+    public String getIdentityCard() {
+        return IdentityCard;
     }
 
-    public void setCMND(String CMND) {
-        this.CMND = CMND;
+    public void setIdentityCard(String IdentityCard) {
+        this.IdentityCard = IdentityCard;
     }
 
-    public String getSoDienThoai() {
-        return SoDienThoai;
+    public String getPhone() {
+        return Phone;
     }
 
-    public void setSoDienThoai(String SoDienThoai) {
-        this.SoDienThoai = SoDienThoai;
+    public void setPhone(String Phone) {
+        this.Phone = Phone;
     }
 
     public String getEmail() {
@@ -84,28 +85,28 @@ public class Student {
         this.Email = Email;
     }
 
-    public String getQueQuan() {
-        return QueQuan;
+    public String getAddress() {
+        return Address;
     }
 
-    public void setQueQuan(String QueQuan) {
-        this.QueQuan = QueQuan;
+    public void setAddress(String Address) {
+        this.Address = Address;
     }
 
-    public String getMonHoc() {
-        return MonHoc;
+    public String getSubject() {
+        return Subject;
     }
 
-    public void setMonHoc(String MonHoc) {
-        this.MonHoc = MonHoc;
+    public void setSubject(String Subject) {
+        this.Subject = Subject;
     }
 
-    public double getDiem() {
-        return Diem;
+    public double getMarks() {
+        return Marks;
     }
 
-    public void setDiem(double Diem) {
-        this.Diem = Diem;
+    public void setMarks(double Marks) {
+        this.Marks = Marks;
     }
-    
+
 }
